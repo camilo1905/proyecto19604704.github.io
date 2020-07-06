@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aligning form controls-solution</title>
+    <style type="text/css">
+      body {
+        font-family: arial, verdana, sans-serif;
+      }
+      div {
+        border-bottom: 1px solid #efefef;
+        margin: 10px;
+        padding-bottom: 10px;
+        width: 260px;
+      }
+      .title {
+        float: left;
+        width: 100px;
+        text-align: right;
+        padding-right: 10px;
+      }
+      .radio-buttons label {
+        float: none;
+      }
+      .submit {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="example.php" method="post">
+      <div>
+        <label for="name" class="title">Name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div>
+        <label for="email" class="title">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="radio-buttons">
+        <span class="title">Genero:</span>
+        <input type="radio" name="genero" id="Female" value="F" />
+        <label for="female">F</label><br />
+      </div>
+      <div class="submit">
+        <input type="submit" value="register" id="submit" />
+      </div>
+    </form>
+    <p>
+      Cada fila del formulario tiene un titulo que le dice a los ususarios lo
+      que necesiten para ingresar para las entradas del texto, el titulo esta en
+      el elemento &lt;label&gt;. para los botones de radio, el titulo estan en
+      un elemento &lt;span&gt;. ambos tienen un atributo de clase con un valor
+      de title.
+    </p>
+    <p>
+      al establecer las propiedades width en esos elementos, sabemos que los
+      titulos tendran el mismo ancho. por lo tanto los controles de formulario
+      que se encuentran en el interio se alienan.
+    </p>
+  </body>
+</html>

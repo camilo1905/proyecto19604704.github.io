@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow</title>
+    <style type="text/css">
+      p {
+        width: 100px;
+        height: 100px;
+        background-color: #e1ddda;
+        margin: 20px;
+        display: inline-block;
+      }
+      p.one {
+        -moz-box-shadow: -5px -5px #777777;
+        -webkit-box-shadow: -5px -5px #777777;
+        box-shadow: -5px -5px #777777;
+      }
+      p.two {
+        -moz-box-shadow: 5px 5px 5px #777777;
+        -webkit-box-shadow: 5px 5px 5px #777777;
+        box-shadow: 5px 5px 5px #777777;
+      }
+      p.three {
+        -moz-box-shadow: 5px 5px 5px 5px #777777;
+        -webkit-box-shadow: 5px 5px 5px 5px #777777;
+        box-shadow: 5px 5px 5px 5px #777777;
+      }
+      p.four {
+        -moz-box-shadow: 0px 0px 10px #777777;
+        -webkit-box-shadow: 0px 0px 10px #777777;
+        box-shadow: 0px 0px 10px #777777;
+      }
+      p.five {
+        -moz-box-shadow: inset 0px 0px 10px #777777;
+        -webkit-box-shadow: inset 0px 0px 10px #777777;
+        box-shadow: inset 0px 0px 10px #777777;
+      }
+      p.text {
+        width: 500px;
+        height: 200px;
+        background-color: #e1ddda;
+        margin: 20px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="one"></p>
+    <p class="two"></p>
+    <p class="three"></p>
+    <br />
+    <p class="four"></p>
+    <p class="five"></p>
+    <br />
+    <p class="text">
+      La propiedad Box-shadow le permite agregar uhna sombra paralela alrededor
+      de un cuadro. funciona igual que la propiedad Text-Shadow. chrome,Firefox
+      y safari admite esta propiedad con las propiedades: -moz-box-shadow y
+      -webkit-box-shadow. Estos no estan en la especificacion CSS pero usarlos
+      pueden ayudar a este estilo para trabjar en estos navegadores.
+    </p>
+  </body>
+</html>

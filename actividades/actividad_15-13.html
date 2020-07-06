@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list, tables and forms</title>
+    <style type="text/css">
+      body {
+        font-family: arial, verdana, sans-serif;
+        font-size: 90%;
+        color: #666;
+        background-color: #f8f8f8;
+      }
+      li {
+        list-style-image: url('.images/icon-plus.png');
+        line-height: 1.6em;
+      }
+      table {
+        border-spacing: 0px;
+      }
+      th,
+      td {
+        padding: 5px 30px 5px 10px;
+        border-spacing: 0px;
+        font-size: 90%;
+        margin: 0px;
+      }
+      th,
+      td {
+        text-align: left;
+        background-color: #e0e9f0;
+        border-top: 1px solid #f1f8fe;
+        border-bottom: 1px solid #cbd2d8;
+      }
+      tr.head th {
+        color: #fff;
+        background-color: #90b4d6;
+        border-bottom: 2px solid #547ca0;
+        border-right: 1px solid #749abe;
+        border-top: 1px solid #90b4d6;
+        text-align: center;
+        text-shadow: -1px -1px 1px #666666;
+        letter-spacing: 0.15em;
+      }
+      td {
+        text-shadow: 1px 1px 1px #ffffff;
+      }
+      tr.even td,
+      tr.even th {
+        background-color: #e8eff5;
+      }
+      tr.head th:first-child {
+        -webkit-border-left-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        border-top-left-radius: 5px;
+      }
+      tr.head th:last-child {
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-right-radius: 5px;
+      }
+      fieldset {
+        width: 310px;
+        margin-top: 20px;
+        border: 1px solid #d6d6d6;
+        background-color: #ffffff;
+        line-height: 1.6em;
+      }
+      legend {
+        font-style: italic;
+        color: #666666;
+      }
+      input [type='text'] {
+        width: 120px;
+        border: 1px solid #d6d6d6;
+        padding: 2px;
+        outline: none;
+      }
+      input[type="text"]: focus,
+      input[type="text"]:hover {
+        background-color: #d0e2fo;
+        border: 1px solid #999999;
+      }
+      input[type='submit'] {
+        border: 1px solid #006633;
+        background-color: #009966;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 10px;
+      }
+      input[type='submit']:hover {
+        border: 1px solid #006633;
+        background-color: #00cc33;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      .title {
+        float: left;
+        width: 160px;
+        clear: left;
+      }
+      .submit {
+        width: 310px;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Talleres de poesia</h1>
+    <p>
+      Llevamos a cabo una sedrie de talleres y simbolos de poesia durante todo
+      el año:
+    </p>
+    <p>
+      Tenga en cuenta que los siguientes eventos son gratuitos para los miembros
+      de la comunidad:
+    </p>
+    <ul>
+      <li>poesia clasica</li>
+      <li>realismo magico</li>
+      <li>obras de nadaismo</li>
+    </ul>
+    <table>
+      <tr class="head">
+        <th></th>
+        <th>Bogota</th>
+        <th>ibague</th>
+        <th>medellin</th>
+      </tr>
+      <tr>
+        <th>Poesia clasica</th>
+        <td>sat, 4 feb 2020<br />11am-2pm</td>
+        <td>sat, 3 mar 2020<br />11am-2pm</td>
+        <td>sat,17 mar 2020<br />11am-2pm</td>
+      </tr>
+      <tr class="even">
+        <th>Realismo Magico</th>
+        <td>sat, 7 apr 2020<br />11am-1pm</td>
+        <td>sat,5 may 2020<br />11am-1pm</td>
+      </tr>
+      <tr>
+        <th>Obras de Nadaismo</th>
+        <td>sat,9 jun 2020<br />11am-2pm</td>
+        <td>sat, 7 jul 2020<br />11am-2pm</td>
+        <td>sat, 21 jul 2020<br />11am-2pm</td>
+      </tr>
+      <tr class="even">
+        <th>nuevas corrientes</th>
+        <td>sat,4 aug 2020<br /></td>
+        <td>sat,8 sep 2020<br /></td>
+        <td>sat, 15 sep 2020<br /></td>
+      </tr>
+    </table>
+    <form action="http://www.example.com/form.php" method="GET">
+      <fieldset>
+        <legend>Registrese en el taller de su interes:</legend>
+        <p>
+          <label class="title" for="name">Su nombre:</label> <input type="text"
+          name:"name" id="name"><br />
+          <label class="title" for="email">Su correo:</label>
+          <input type="text" name="email" id="email" />
+        </p>
+        <p>
+          <label for="location" class="title">Su centro cercano</label>
+          <select name="location" id="location " id="location">
+            <option value="ny">Bogota</option>
+            <option value="li">Ibague</option>
+            <option value="ca">Medellin</option>
+          </select>
+        </p>
+        <span class="title">Es miembro de la comunidad?</span>
+        <label><input type="radio" name="member" value="yes" />Si</label>
+        <label><input type="radio" name="member" value="n0" />no</label>
+      </fieldset>
+      <div class="submit"><input type="submit" value="Registro" /></div>
+    </form>
+  </body>
+</html>

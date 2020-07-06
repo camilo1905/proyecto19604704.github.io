@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLAY STATION 5</title>
+    <style type="text/css">
+      body {
+        font-family: arial, verdana, sans-serif;
+        font-size: 90%;
+        color: #666;
+        background-color: #f8f8f8;
+      }
+      li {
+        list-style-image: url('.images/icon-plus.png');
+        line-height: 1.6em;
+      }
+      table {
+        border-spacing: 0px;
+      }
+      th,
+      td {
+        padding: 5px 30px 5px 10px;
+        border-spacing: 0px;
+        font-size: 90%;
+        margin: 0px;
+      }
+      th,
+      td {
+        text-align: left;
+        background-color: #e0e9f0;
+        border-top: 1px solid #f1f8fe;
+        border-bottom: 1px solid #cbd2d8;
+      }
+      tr.head th {
+        color: #fff;
+        background-color: #90b4d6;
+        border-bottom: 2px solid #547ca0;
+        border-right: 1px solid #749abe;
+        border-top: 1px solid #90b4d6;
+        text-align: center;
+        text-shadow: -1px -1px 1px #666666;
+        letter-spacing: 0.15em;
+      }
+      td {
+        text-shadow: 1px 1px 1px #ffffff;
+      }
+      tr.even td,
+      tr.even th {
+        background-color: #e8eff5;
+      }
+      tr.head th:first-child {
+        -webkit-border-left-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        border-top-left-radius: 5px;
+      }
+      tr.head th:last-child {
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-right-radius: 5px;
+      }
+      fieldset {
+        width: 310px;
+        margin-top: 20px;
+        border: 1px solid #d6d6d6;
+        background-color: #ffffff;
+        line-height: 1.6em;
+      }
+      legend {
+        font-style: italic;
+        color: #666666;
+      }
+      input [type='text'] {
+        width: 120px;
+        border: 1px solid #d6d6d6;
+        padding: 2px;
+        outline: none;
+      }
+      input[type="text"]: focus,
+      input[type="text"]:hover {
+        background-color: #d0e2fo;
+        border: 1px solid #999999;
+      }
+      input[type='submit'] {
+        border: 1px solid #006633;
+        background-color: #009966;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 10px;
+      }
+      input[type='submit']:hover {
+        border: 1px solid #006633;
+        background-color: #00cc33;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      .title {
+        float: left;
+        width: 160px;
+        clear: left;
+      }
+      .submit {
+        width: 310px;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PLAY STATION 5</h1>
+    <p>
+      Lo que podemos saber es la ultimaconsola es disfrutar la potencia de una
+      CPU, una GPU y una SSD personalizadas con E/S integradas que redefinirán
+      lo que una consola PlayStation puede hacer.
+    </p>
+    <p>
+      Juegos asombrosos Maravíllate con asombrosos gráficos y descubre las
+      nuevas funciones de PS5™.
+    </p>
+    <ul>
+      <li>MANDO A DISTANCIA</li>
+      <li>TELEVISORES 4K</li>
+      <li>TECNOLOGIA 8K</li>
+    </ul>
+    <form action="http://www.example.com/form.php" method="GET">
+      <fieldset>
+        <legend>Registrese Para recibir una consola gratis por 2 meses:</legend>
+        <p>
+          <label class="title" for="name">Su nombre:</label> <input type="text"
+          name:"name" id="name"><br />
+          <label class="title" for="email">Su correo:</label>
+          <input type="text" name="email" id="email" />
+        </p>
+        <p>
+          <label for="location" class="title"> pais</label>
+          <select name="location" id="location " id="location">
+            <option value="ny">colombia</option>
+            <option value="li">Estados Unidos</option>
+            <option value="ca">España</option>
+          </select>
+        </p>
+        <span class="title">Tienes alguna PlayStation</span>
+        <label><input type="radio" name="member" value="yes" />Si</label>
+        <label><input type="radio" name="member" value="n0" />no</label>
+      </fieldset>
+      <div class="submit"><input type="submit" value="Registro" /></div>
+    </form>
+  </body>
+</html>
